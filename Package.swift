@@ -19,11 +19,16 @@ let package = Package(
         ),
         .target(
             name: "MetricsTestKit",
-            dependencies: ["Metrics"]
+            dependencies: [
+                "Metrics"
+            ]
         ),
         .testTarget(
             name: "MetricsTests",
-            dependencies: ["Metrics", "MetricsTestKit"]
+            dependencies: [
+                "Metrics",
+                "MetricsTestKit",
+            ]
         ),
     ]
 )
